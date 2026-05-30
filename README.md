@@ -1,76 +1,75 @@
-# Markup to HTML Converter
+# Markdown to HTML
 
-A Python tool that converts Markdown (and other markup) files to clean, styled HTML documents.
+A simple Python tool that converts Markdown (`.md`) files into clean HTML pages.
 
 ## Features
 
-- 🎨 **Customizable styling** - Light or dark theme options
-- 📑 **Table of contents** - Auto-generated navigation sidebar
-- 🔢 **Math support** - LaTeX-style math expressions via MathJax
-- 🎨 **Syntax highlighting** - Code blocks with Prism.js styling
-- 📦 **Self-contained output** - Single HTML file with embedded resources
+- Convert Markdown files to HTML
+- Fast and lightweight
+- Easy to use
+- Suitable for notes, documentation, and static web pages
 
 ## Requirements
 
-- Python 3.6+
-- `markdown` Python package
+- Python 3.x
+- markdown library
 
 ## Installation
 
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd markdowntopdf
-   ```
+Install the required package:
 
-2. Install dependencies:
-   ```bash
-   pip install markdown
-   ```
+```bash
+pip install markdown
+```
 
 ## Usage
 
+Run the script:
+
 ```bash
-python convert_to_html.py <input.md> [output.html]
+python generate_html.py
 ```
 
-### Examples
+The script will convert the Markdown file into an HTML file.
 
-Convert a markdown file with default output name:
-```bash
-python convert_to_html.py document.md
-# Creates: document.html
+## Example
+
+### Markdown Input
+
+```markdown
+# Hello World
+
+This is a markdown file.
+
+- Item 1
+- Item 2
 ```
 
-Convert with custom output name:
-```bash
-python convert_to_html.py document.md my-page.html
-# Creates: my-page.html
+### HTML Output
+
+```html
+<h1>Hello World</h1>
+<p>This is a markdown file.</p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
 ```
 
-## How It Works
+## Screenshots
 
-1. Reads the Markdown file and parses its content
-2. Converts Markdown to HTML using the `markdown` library
-3. Wraps the content in an HTML template with:
-   - Dark mode styling (CSS)
-   - Auto-generated table of contents (JavaScript)
-   - MathJax for math rendering
-   - Prism.js for syntax highlighting
-4. Outputs a single, self-contained HTML file
+### Markdown Input
 
-## Example Output
+(Add screenshot below)
 
-The generated HTML includes:
-- Responsive design for all screen sizes
-- Sidebar navigation with table of contents
-- Clickable headings for easy navigation
-- Print-friendly CSS
+### HTML Output
 
-## Dependencies
+(Add screenshot below)
 
-- `markdown` - For Markdown to HTML conversion
+## Author
+
+Anurag Kumar
 
 ## License
 
-MIT License - Feel free to use and modify.
+This project is open source and available for learning and personal use.
