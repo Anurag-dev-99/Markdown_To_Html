@@ -60,12 +60,11 @@ This is a markdown file.
 
 ### Markdown Input
 
-(Add screenshot below)
+![Markdown Input](screenshot-input.png)
 
 ### HTML Output
 
-(Add screenshot below)
-
+![HTML Output](screenshot-output.png)
 ## Author
 
 Anurag Kumar
